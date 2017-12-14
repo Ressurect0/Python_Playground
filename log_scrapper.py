@@ -10,7 +10,7 @@ log_set = set()
 file_desc = open(cwd+"/logs_inspect.txt","r")
 
 for line in file_desc.readlines():
-    if line.find("USB") != -1: #and line.find("device detected") != -1:
+    if line.find("USB") != -1: and line.find("device detected") != -1:
         log_set.add(line[:15])
         #print line
 
