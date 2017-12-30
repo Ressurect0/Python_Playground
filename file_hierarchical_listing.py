@@ -18,6 +18,7 @@ def recursive_lister(dir,count):
                 print "_ _ _"*count + item + "(U)"
 
 
+#Printing Files and Directories within the Home directory
 home = os.path.expanduser("~")
 file_a = os.getcwd()
 recursive_lister(home,0)
